@@ -1,5 +1,5 @@
 import mongoose, { Document, Schema } from 'mongoose';
-import { BaseSchema } from '../../db/BaseSchema';
+import { BaseSchema } from '~/common/db/BaseSchema';
 
 export interface Task {
   title: string;

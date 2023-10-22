@@ -1,7 +1,9 @@
 import { NextFunction, Request, Response } from 'express';
+
+import { TASK } from '~/common/constants/task.messages';
+import ResponseHandler from '~/common/helpers/responseHandler';
+
 import Task from './task.model';
-import ResponseHandler from '../../common/helpers/responseHandler';
-import { TASK } from '../../common/constants/task.messages';
 import { TasksService } from './task.service';
 
 export default class TasksController {
